@@ -1,6 +1,6 @@
 let permutations = []
 
-function isPermutation(str1, str2) {
+function isPermutation(str1='', str2='') {
     if (str1.length !== str2.length) {
         return false
     }
@@ -24,7 +24,7 @@ function isPermutation(str1, str2) {
 //   str: String - The string to find permutations for
 //   start: number - Starting index of the string
 //   n: number - Ending index of the string.
-function findPermutations(str, start, n) {
+function findPermutations(str='', start, n) {
     if (start === n) {
         permutations.push(str)
         return;
@@ -42,7 +42,7 @@ function findPermutations(str, start, n) {
 //   str: String - The string to carry out swap operation on
 //   i: number - Starting index of the string
 //   j: number - Ending index of the string.
-function swap(str, i, j) {
+function swap(str='', i, j) {
     let strArray = str.split("");
     let temp = strArray[i] ;
 

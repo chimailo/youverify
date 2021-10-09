@@ -3,7 +3,7 @@
 //   str: String - string to carry out operation on
 //   target: String - what to replace
 //   replaceWith: String - what to replace target with
-function urlify(str, target=' ', replaceWith='20%') {
+function urlify(str='', target=' ', replaceWith='20%') {
     for (i=0; i<str.length; i++) {
         str = str.replace(target, replaceWith);
     }

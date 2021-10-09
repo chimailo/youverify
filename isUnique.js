@@ -1,4 +1,4 @@
-function isUnique(str) {
+function isUnique(str='') {
     const strArray = str.split('')
     const n = strArray.length
 

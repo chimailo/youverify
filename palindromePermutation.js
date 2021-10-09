@@ -1,6 +1,6 @@
 let permutations = []
 
-function PalindromePermutation(str) {
+function PalindromePermutation(str='') {
     findPermutations(str, 0, str.length-1);
     console.log(permutations)
 
@@ -15,7 +15,7 @@ function PalindromePermutation(str) {
     return false
 }
 
-function isPalindrome(str) {
+function isPalindrome(str='') {
     str = str.toLowerCase().replace(/[^A-Za-z0-9]/g, '');
     var n = str.length;
 
@@ -33,7 +33,7 @@ function isPalindrome(str) {
 //   str: String - The string to find permutations for
 //   start: number - Starting index of the string
 //   n: number - Ending index of the string.
-function findPermutations(str, start, n) {
+function findPermutations(str='', start, n) {
     if (start === n) {
         permutations.push(str)
         return;
@@ -51,7 +51,7 @@ function findPermutations(str, start, n) {
 //   str: String - The string to carry out swap operation on
 //   i: number - Starting index of the string
 //   j: number - Ending index of the string.
-function swap(str, i, j) {
+function swap(str='', i, j) {
     let strArray = str.split("");
     let temp = strArray[i] ;
 

@@ -1,14 +1,9 @@
-// Get the diff between the two arrays
-// if the diff is greater than one return false
-
-function isOneAway(str1, str2) {
+function isOneAway(str1='', str2='') {
     const arr1 = str1.split('')
     const arr2 = str2.split('')
-    console.log(arr2, arr1)
 
     const diff1 = arrDiff(arr1, arr2)
     const diff2 = arrDiff(arr2, arr1)
-    console.log(diff2, diff1)
 
     if (diff1.length > 1) {
         return false
